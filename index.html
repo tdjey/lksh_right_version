@@ -368,7 +368,7 @@
         let deep_flag = false;
         
         window.addEventListener("scroll", function(){
-            if (document.documentElement.clientHeight + 40 >= footer.getBoundingClientRect().top){
+            if (footer.getBoundingClientRect().top - window.innerHeight < 50){
                 let new_pack = document.createElement("div");
                 new_pack.innerHTML = document.querySelector(".section__body").innerHTML;
                 let links = document.querySelector(".links");
