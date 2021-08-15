@@ -427,7 +427,7 @@
         function spawn() {
             var img = document.createElement('img');
             var body = document.getElementsByTagName("body")[0];
-            img.src = 'lksh_right_version/gachi_sourse/pants_trimmed.jpg';
+            img.src = '/lksh_right_version/gachi_sourse/pants_trimmed.jpg';
             img.style.position = 'absolute';
             var sz = 60 + getRandomInt(60);
             img.style.width = sz + 'px';
@@ -446,7 +446,7 @@
             img.onclick = function(event) {
                 n--;
                 var blood = document.createElement('img');
-                blood.src = '/gachi_sourse/' + urls[getRandomInt(2)];
+                blood.src = urls[getRandomInt(2)];
                 hot_loads_counter++;
                 blood.style.position = 'absolute';
                 blood.style.width = sz + 'px';
