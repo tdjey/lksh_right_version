@@ -390,7 +390,7 @@
         let pict_arr = document.querySelectorAll(".lessons__lesson__logo");
         for (let i = 1; i < pict_arr.length; i++) {
             let pict_num = getRandomInt(8) + 1;
-            pict_arr[i].setAttribute("src", "/gachi_sourse/meme" + pict_num + ".jpg");
+            pict_arr[i].setAttribute("src", "/lksh_right_version/gachi_sourse/meme" + pict_num + ".jpg");
         }
 
         window.addEventListener("click", function() {
@@ -427,7 +427,7 @@
         function spawn() {
             var img = document.createElement('img');
             var body = document.getElementsByTagName("body")[0];
-            img.src = '/gachi_sourse/pants_trimmed.jpg';
+            img.src = '/lksh_right_version/gachi_sourse/pants_trimmed.jpg';
             img.style.position = 'absolute';
             var sz = 60 + getRandomInt(60);
             img.style.width = sz + 'px';
@@ -442,11 +442,11 @@
             img.v_y = Math.random() * 2 - 1;
             body.appendChild(img);
             n++;
-            let urls = ["ripped.png", "ripped2.png"];
+            let urls = ["/lksh_right_version/gachi_sourse/ripped.png", "/lksh_right_version/gachi_sourse/ripped2.png"];
             img.onclick = function(event) {
                 n--;
                 var blood = document.createElement('img');
-                blood.src = '/gachi_sourse/' + urls[getRandomInt(2)];
+                blood.src = urls[getRandomInt(2)];
                 hot_loads_counter++;
                 blood.style.position = 'absolute';
                 blood.style.width = sz + 'px';
