@@ -70,17 +70,17 @@
     </header>
 
     <main>
-       <h1 style="border-bottom:1px solid rgb(230, 230, 230);margin-bottom:15px">Полезные ссылки категории Б</h1>
-                <a href="cpp.pdf">Правила оформления кода (right version)</a>
-                <br>
-                <a href="https://t.me/joinchat/dpHKniVivtplMDc6">ЧаТеГ в телеге</a>
-                <br>
-                <a href="https://ejudge.lksh.ru/5/compile.html">Строка cumпиляции для дебага</a>
-                <br>
-                <a href="test.html">тест для Андрюхи</a>
+        <h1 style="border-bottom:1px solid rgb(230, 230, 230);margin-bottom:15px">Полезные ссылки категории Б</h1>
+        <a href="cpp.pdf">Правила оформления кода (right version)</a>
+        <br>
+        <a href="https://t.me/joinchat/dpHKniVivtplMDc6">ЧаТеГ в телеге</a>
+        <br>
+        <a href="https://ejudge.lksh.ru/5/compile.html">Строка cumпиляции для дебага</a>
+        <br>
+        <a href="test.html">тест для Андрюхи</a>
         <div class="row">
             <div class="column">
-               <section class="teachers">
+                <section class="teachers">
 
                     <div class="section__title">
                         Преподаватели параллели 5 </div>
@@ -159,7 +159,7 @@
                         <div class="lessons__lesson with-logo" style="min-height: 180px;">
                             <div class="lessons__lesson__title">
                                 <div class="lessons__lesson__index">12</div>
-                                <img src="./Параллель 5_files/12.png" alt="Строчки" class="lessons__lesson__logo" style="width: 180px; height: 180px">
+                                <img src="./gachi_sourse/meme1.jpeg" alt="Строчки" class="lessons__lesson__logo" style="width: 180px; height: 180px">
                                 <a href="https://ejudge.lksh.ru/5/statements/12.pdf" title="Условия задач" target="_blank">Стр_очки</a>
                             </div>
 
@@ -315,7 +315,7 @@
                             <div class="lessons__lesson__title">
                                 <div class="lessons__lesson__index">1</div>
                                 <img src="./Параллель 5_files/01.jpg" alt="Мосты, точки сочленения, Компоненты сильной связности" class="lessons__lesson__logo" style="width: 180px; height: 180px">
-                                <a href="https://ejudge.lksh.ru/5/statements/01.pdf" title="Условия задач" target="_blank">Мосты, точки сочленения, Компоненты сильной связности</a>
+                                <a href="https://ejudge.lksh.ru/5/statements/01.pdf" title="Условия задач" target="_blank">Мосты, точки сочленения, cumпоненты сильной связности</a>
                             </div>
 
                             <div class="lessons__lesson__additional-info">
@@ -351,34 +351,152 @@
             </div>
         </div>
         <div id="footer"></div>
-<!--        <audio src="gahci_sounds/Spank.mp3"-->
+        <!--        <audio src="gahci_sounds/Spank.mp3"-->
     </main>
-    <script> // ah shit, i'm sorry
-        
-        alert("Согласны? Узнали?");
-        
-        window.addEventListener("click", function(){
-           let spank_sound = new Audio();
+    <script>
+        // ah shit, i'm sorry
+
+        let bayans = ["Как называют человека, который продал свою печень? Обеспеченный.",
+            "Как предотвратить инцест у грибов? Фразой 'Не спорь с матерью!'",
+            "Как называется притон наркоманов-закладчиков? Клуб весёлых и находчивых.",
+            '- Доктор, помогите, у меня бесплодие!\n' +
+
+            '- Откуда вы знаете?\n' +
+
+            '- У нас это наследственное.\n' +
+
+            '- В смысле?\n' +
+
+            '- Ну, у моего деда не было детей, у отца не было детей...\n' +
+
+            '- А вы тогда откуда?\n' +
+
+            '- Из Ижевска.\n',
+            "Едет мужик по дороге. Вдруг видит гостиницу, а она только для черных.\n 'Да фигня' - подумал мужик, измазался гуталином и пошел внутрь." +
+            " Поел, попил, приходит на ресепшен и говорит:\n" +
+
+            "- Мне завтра рано встать надо, я тороплюсь, разбудите?\n" +
+            "- Без проблем, разбудим\n" +
+
+            "На следующий день в 6 утра его подрывают, он в спешке собирается и уезжает. Проехал уже прилично и думает: 'надо бы гуталин смыть'.\n Начинает тереть - " + "не оттирается. Он трет сильнее - не оттирает. Начинает с остервенением себя оттирать, останавливается, хватается за голове и орет:\n" +
+            "'- ДА ОНИ НЕ ТОГО МУЖИКА РАЗБУДИЛИ!'",
+        ]
+
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+        }
+        alert(bayans[getRandomInt(5)] + "\np.s Включите звук");
+
+        let pict_arr = document.querySelectorAll(".lessons__lesson__logo");
+        for (let i = 1; i < pict_arr.length; i++) {
+            let pict_num = getRandomInt(8) + 1;
+            pict_arr[i].setAttribute("src", "/gachi_sourse/meme" + pict_num + ".jpg");
+        }
+
+        window.addEventListener("click", function() {
+            let spank_sound = new Audio();
             spank_sound.src = 'gachi_sounds/slap.mp3';
             spank_sound.play();
         });
-        
+
         let deep_flag = false;
-        
-        window.addEventListener("scroll", function(){
-            if (footer.getBoundingClientRect().top - window.innerHeight < 50){
+
+        window.addEventListener("scroll", function() {
+            if (footer.getBoundingClientRect().top - window.innerHeight < 50) {
                 let new_pack = document.createElement("div");
                 new_pack.innerHTML = document.querySelector(".links .section__body").innerHTML;
                 let links = document.querySelector(".links");
                 links.appendChild(new_pack);
             }
-            if (window.scrollY > 4000 && !deep_flag){
+            if (window.scrollY > 4000 && !deep_flag) {
                 let its_so_fckng_deep = new Audio();
                 its_so_fckng_deep.src = 'gachi_sounds/Its so fucking deep.mp3';
                 its_so_fckng_deep.play();
                 deep_flag = true;
             }
         });
+
+    </script>
+    <script>
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * Math.floor(max));
+        }
+
+        hot_loads_counter = 0;
+
+        function spawn() {
+            var img = document.createElement('img');
+            var body = document.getElementsByTagName("body")[0];
+            img.src = '/gachi_sourse/pants_trimmed.jpg';
+            img.style.position = 'absolute';
+            var sz = 60 + getRandomInt(60);
+            img.style.width = sz + 'px';
+            img.style.height = sz + 'px';
+            img.zzspeed = 3 + Math.random() * 1;
+            img.w = 50 + getRandomInt(body.clientWidth - 100);
+            img.h = 50 + getRandomInt(body.clientHeight - 100);
+            img.style.top = img.h + 'px';
+            img.style.left = img.w + 'px'
+            img.className = 'droplet';
+            img.v_x = Math.random() * 2 - 1;
+            img.v_y = Math.random() * 2 - 1;
+            body.appendChild(img);
+            n++;
+            let urls = ["ripped.png", "ripped2.png"];
+            img.onclick = function(event) {
+                n--;
+                var blood = document.createElement('img');
+                blood.src = '/gachi_sourse/' + urls[getRandomInt(2)];
+                hot_loads_counter++;
+                blood.style.position = 'absolute';
+                blood.style.width = sz + 'px';
+                blood.style.height = sz + 'px';
+                blood.style.top = img.style.top;
+                blood.style.left = img.style.left;
+                body.appendChild(blood);
+                img.remove();
+                if (hot_loads_counter == 6) {
+                    let its_so_fckng_deep = new Audio();
+                    its_so_fckng_deep.src = 'gachi_sounds/six-hot-loads.mp3';
+                    its_so_fckng_deep.play();
+                }
+            }
+        }
+
+
+        var n = 0;
+        for (var i = 0; i < 6; ++i) {
+            spawn();
+        }
+
+        var elems = document.getElementsByClassName('droplet');
+
+        function moveall() {
+
+            var body = document.getElementsByTagName("body")[0];
+            for (var i = 0; i < n; i++) {
+                var k = 0.1
+                elems[i].v_x += Math.random() * k * 2 - k
+                elems[i].v_y += Math.random() * k * 2 - k
+            }
+
+            for (var i = 0; i < n; i++) {
+                elems[i].h += elems[i].zzspeed * elems[i].v_x;
+                elems[i].w += elems[i].zzspeed * elems[i].v_y;
+                elems[i].style.top = elems[i].h + 'px';
+                elems[i].style.left = elems[i].w + 'px';
+            }
+
+            for (var i = 0; i < n; i++) {
+                if (elems[i].h >= body.clientHeight || elems[i].w >= body.clientWidth || elems[i].h <= 0 || elems[i].w <= 0) {
+                    elems[i].remove();
+                    n--;
+                    spawn();
+                }
+            }
+        }
+        window.setInterval(moveall, 40);
+
     </script>
 </body>
 
